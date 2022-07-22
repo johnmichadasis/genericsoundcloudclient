@@ -6,14 +6,18 @@ let win;
 
 function createWindow() {
     win = new BrowserWindow({
-    width: 1200,
-    height: 750,
-    icon: './soundcloud.ico',
-    backgroundColor: '#fd4202',
-    title: 'SoundCloud'
+    width: 1280,
+    height: 720,
+    icon: './icons/soundcloud.ico',
+//    backgroundColor: '#fd4202',
+	backgroundColor: '#1c1c1c',
+    title: 'Soundcloud'
 });
 win.removeMenu()
 win.loadURL('https://soundcloud.com/')
+win.on('page-title-updated', (evt) => {
+  evt.preventDefault();
+});
 
 win.on('closed', function(){
     win = null;
