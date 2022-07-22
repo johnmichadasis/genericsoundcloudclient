@@ -19,8 +19,8 @@ After all that, type in your terminal
 and hope that it launches.
 
 # Credits
-rgnd for windows and readme help 
-michh for linux dev
+rgnd for windows and readme help,
+michh for linux dev,
 icon: https://findicons.com/icon/554919/soundcloud
 
 # Legal
