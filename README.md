@@ -8,6 +8,17 @@ run FIRSTTIMESETUP.bat from the Administrative Command Prompt and wait for it to
 run CONSOLELAUNCH.bat to ensure that it's running with no errors that break the program.
 run LAUNCH.vbs normally from Windows Explorer.
 
+# Linux
+Go to releases and click on the latest 
+Download the AppImage
+Make sure that it is executable.
+On most Linux distros, you have right click on the AppImage, go to permissions and tick 'Allow executing as a program'
+
+If you can't do that;
+move the AppImage to the desktop,
+open the terminal in the desktop folder
+run chmod a+x soundcloud-x-x-x.Appimage (replace the x with the version you downloaded) 
+
 # Any operating system with a terminal
 In order to launch this you need to have node and npm installed. (from nodejs.org)
 When you have them downloaded, open the terminal and run:
