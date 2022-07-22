@@ -1,15 +1,24 @@
 const {app, BrowserWindow} = require('electron');
+const contextMenu = require('electron-context-menu');
 const {url} = require('url');
 const path = require('path');
 
 let win;
 
+contextMenu({
+	showCopyLink: true//,
+   // showInspectElement: false
+});
+
 function createWindow() {
     win = new BrowserWindow({
+        webPreferences: {
+			showCopyLink: true,
+            //showInspectElement: false
+		},
     width: 1280,
     height: 720,
     icon: './icons/soundcloud.ico',
-//    backgroundColor: '#fd4202',
 	backgroundColor: '#1c1c1c',
     title: 'Soundcloud'
 });
