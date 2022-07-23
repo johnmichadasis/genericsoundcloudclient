@@ -1,5 +1,5 @@
 # About
-genericsoundcloudclient is the most basic client for soundcloud you can find. it's electron that runs soundcloud.com
+GenericSoundcloudClient is the most basic client for soundcloud you can find. it's electron that runs soundcloud.com
 
 # Windows
 Make sure you have node and npm installed from "nodejs.org"
