@@ -18,8 +18,8 @@ function createWindow() {
 		},
     width: 1280,
     height: 720,
-    icon: './icons/soundcloud.ico',
-	backgroundColor: '#1c1c1c',
+    icon: './src/soundcloud.png',
+	backgroundColor: '#000000',
     title: 'Soundcloud'
 });
 win.removeMenu()

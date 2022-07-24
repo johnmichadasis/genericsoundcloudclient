@@ -1,18 +1,31 @@
 {
-  "name": "project-11",
-  "version": "1.0.0",
-  "description": "",
+  "name": "generic-soundcloud-client",
+  "version": "1.1.2",
+  "description": "The most basic soundcloud client",
   "main": "index.js",
   "scripts": {
     "start": "electron ."
   },
   "keywords": [],
-  "author": "",
+  "author": {
+  "name": "Michh",
+  "email": "johnmichadasis@gmail.com"
+  },
   "license": "ISC",
+  "homepage": "https://github.com/johnmichadasis/genericsoundcloudclient",
   "devDependencies": {
     "electron": "^19.0.9"
   },
   "dependencies": {
     "electron-context-menu": "^3.3.0"
+  },
+  "bugs": {
+  "url": "https://github.com/johnmichadasis/genericsoundcloudclient/issues"
+  },
+  "win": {
+      "icon": "src/icon.ico"
+  },
+  "linux": {
+      "icon": "src/icon.ico"
   }
 }
