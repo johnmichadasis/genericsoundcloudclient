@@ -6,7 +6,7 @@ In order to launch this you need to have node and npm installed. (from nodejs.or
 When you have them downloaded go to releases, download the latest .msi file and run it
 
 # Debian linux
-Go to released and click on the latest
+Go to releases and click on the latest
 Download the .deb file
 Run the .deb file
 
