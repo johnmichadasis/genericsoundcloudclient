@@ -3,17 +3,14 @@ genericsoundcloudclient is the most basic client for soundcloud you can find. it
 
 # Windows
 In order to launch this you need to have node and npm installed. (from nodejs.org)
-When you have them downloaded, open command prompt as administrator and run:
--- npm i -g electron .
-After running that, run 
--- npm i electron-context-menu
-then, run
--- npm i .
-After all that, type in your terminal
--- npm start
-and hope that it launches.
+When you have them downloaded go to releases, download the latest .msi file and run it
 
-# Linux
+# Debian linux
+Go to releases and click on the latest
+Download the .deb file
+Run the .deb file
+
+# Other linux distros that aren't debian based
 Go to releases and click on the latest 
 Download the AppImage
 Make sure that it is executable.
