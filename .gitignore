@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+build/icon.png
+build/desktop.desktop
+generic-soundcloud-client.desktop
