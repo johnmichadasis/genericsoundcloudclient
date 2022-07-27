@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron');
+const {app, BrowserWindow, electron, globalShortcut} = require('electron');
 const contextMenu = require('electron-context-menu');
 const {url} = require('url');
 const path = require('path');
@@ -11,6 +11,12 @@ contextMenu({
 });
 
 function createWindow() {
+    globalShortcut.register('f5', function() {
+		win.reload()
+	})
+	globalShortcut.register('CommandOrControl+R', function() {
+		win.reload()
+	})
     win = new BrowserWindow({
         webPreferences: {
 			showCopyLink: true,
@@ -20,7 +26,7 @@ function createWindow() {
     height: 720,
     icon: './src/soundcloud.png',
 	backgroundColor: '#000000',
-    title: 'Soundcloud'
+    title: 'Soundcloud' 
 });
 win.removeMenu()
 win.loadURL('https://soundcloud.com/')
@@ -31,9 +37,7 @@ win.on('page-title-updated', (evt) => {
 win.on('closed', function(){
     win = null;
 });
-
-}
-
+    }
 
 app.on('ready', createWindow)
 
