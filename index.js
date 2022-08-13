@@ -14,7 +14,7 @@ function createWindow() {
     globalShortcut.register('f5', function() {
 		win.reload()
 	})
-	globalShortcut.register('CommandOrControl+R', function() {
+	globalShortcut.register('Shift+Control+R', function() {
 		win.reload()
 	})
     win = new BrowserWindow({
