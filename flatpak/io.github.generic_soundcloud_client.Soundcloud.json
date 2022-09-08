@@ -1,0 +1,17 @@
+{
+    "app-id": "io.github.generic_soundcloud_client.Soundcloud",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "master",
+    "sdk": "org.gnome.Sdk",
+    "command": "/opt/generic-soundcloud-client/generic-soundcloud-client",
+    "modules": [
+ {"name": "generic-soundcloud-client",
+            "buildsystem": "file",
+            "sources": 
+              {
+                "type": "file",
+                "url": "https://github.com/johnmichadasis/genericsoundcloudclient/releases/download/1.1.4/generic-soundcloud-client_1.1.4_amd64.deb"
+              }
+            }]
+
+          }

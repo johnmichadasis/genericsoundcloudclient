@@ -11,7 +11,7 @@ contextMenu({
 });
 
 function createWindow() {
-    globalShortcut.register('f5', function() {
+    globalShortcut.register('Shift+f5', function() {
 		win.reload()
 	})
 	globalShortcut.register('Shift+Control+R', function() {

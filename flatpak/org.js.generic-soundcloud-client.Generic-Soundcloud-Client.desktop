@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Generic SoundCloud Client
+Comment=Generic Soundcloud Client
+Exec="/opt/generic-soundcloud-client/generic-soundcloud-client"
+Terminal=false
+Type=Application
+Icon=
+Categories=Audio;AudioVideo;Network;Player;Music;
