@@ -1,9 +1,12 @@
-const {app, BrowserWindow, electron, globalShortcut} = require('electron');
+const {app, BrowserWindow, electron, globalShortcut, window} = require('electron');
 const contextMenu = require('electron-context-menu');
 const {url} = require('url');
 const path = require('path');
+//const ECx = require("electron-chrome-extension").default;
 
 let win;
+
+
 
 contextMenu({
 	showCopyLink: true//,
@@ -26,7 +29,7 @@ function createWindow() {
     height: 720,
     icon: './src/soundcloud.png',
 	backgroundColor: '#000000',
-    title: 'Soundcloud' 
+    title: 'Generic Soundcloud Client' 
 });
 win.removeMenu()
 win.loadURL('https://soundcloud.com/')
@@ -39,7 +42,12 @@ win.on('closed', function(){
 });
     }
 
-app.on('ready', createWindow)
+app.on('ready', async () => {
+        createWindow();
+    //await ECx.load('agjnjboanicjcpenljmaaigopkgdnihi');
+});
+
+
 
 app.on('window-all-closed', function(){
     if(process.platform != 'darwin'){
